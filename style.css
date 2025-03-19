@@ -1,0 +1,65 @@
+/* サイト全体の設定 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* ヘッダー（上の青い部分） */
+header {
+    background: #004080;
+    color: white;
+    padding: 20px;
+}
+
+/* ナビゲーションメニュー */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* メインビジュアル */
+#hero {
+    background: #e0f7fa;
+    padding: 40px;
+}
+
+#hero h2 {
+    color: #004080;
+}
+
+/* 記事リスト */
+#articles {
+    padding: 20px;
+}
+
+.article-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.article {
+    background: #f0f0f0;
+    padding: 10px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+/* フッター */
+footer {
+    background: #222;
+    color: white;
+    padding: 10px;
+}
