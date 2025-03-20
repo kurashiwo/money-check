@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>お金の診断書</title>
+    <title>お金の診断書 - FPが教えるお金の健康診断</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- ヘッダー（ナビゲーション） -->
     <header>
         <h1>お金の診断書</h1>
         <nav>
@@ -16,38 +17,35 @@
                 <li><a href="contact.html">お問い合わせ</a></li>
             </ul>
         </nav>
-        
     </header>
-    
+
+    <!-- メインコンテンツ -->
     <main>
-        <section id="hero">
+        <section id="hero" class="fade-in">
             <h2>お金の健康診断をしませんか？</h2>
             <p>FPが教える、お金の管理・節約・投資の基本</p>
+            <a href="articles.html" class="button">記事を読む</a>
         </section>
 
-        <section id="articles">
-            <h2>最新記事</h2>
-            <div class="article-list">
-                <div class="article">節約のコツ</div>
-                <div class="article">NISAの始め方</div>
-                <div class="article">家計簿のつけ方</div>
-            </div>
-        </section>
+        <!-- おすすめ記事 -->
         <section id="note-articles">
-            <h2>おすすめ記事（note）</h2>
-            <ul>
-                <li><a href="https://note.com/vast_rabbit3865/n/n77caa9900b9f" target="_blank">節約のコツ（note）</a></li>
+            <h2 class="fade-in">おすすめ記事</h2>
+            <p class="fade-in">お金の管理を学び、節約や投資を実践しよう！</p>
+
+            <ul class="article-list">
+                <li class="article fade-in"><a href="https://note.com/vast_rabbit3865/n/n77caa9900b9f" class="button" target="_blank">節約のコツ（note）</a></li>
+                <li class="article fade-in"><a href="https://note.com/vast_rabbit3865/n/nisa-start" class="button" target="_blank">NISAの始め方（note）</a></li>
+                <li class="article fade-in"><a href="https://note.com/vast_rabbit3865/n/budgeting" class="button" target="_blank">家計簿のつけ方（note）</a></li>
             </ul>
         </section>
-        <h2 class="fade-in">おすすめ記事</h2>
-<p class="fade-in">お金の管理を学び、節約や投資を実践しよう！</p>
-
     </main>
 
+    <!-- フッター -->
     <footer>
         <p>&copy; 2025 お金の診断書 | All Rights Reserved.</p>
     </footer>
-    <script src="script.js"></script>
 
+    <!-- JavaScriptの読み込み -->
+    <script src="script.js"></script>
 </body>
 </html>

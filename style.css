@@ -1,80 +1,17 @@
-/* サイト全体の設定 */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-/* ヘッダー（上の青い部分） */
-header {
-    background: #004080;
-    color: white;
-    padding: 20px;
-}
-
-/* ナビゲーションメニュー */
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-/* メインビジュアル */
-#hero {
-    background: #e0f7fa;
-    padding: 40px;
-}
-
-#hero h2 {
-    color: #004080;
-}
-
-/* 記事リスト */
-#articles {
-    padding: 20px;
-}
-
-.article-list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.article {
-    background: #f0f0f0;
-    padding: 10px;
-    width: 150px;
-    border-radius: 5px;
-}
-
-/* フッター */
-footer {
-    background: #222;
-    color: white;
-    padding: 10px;
-}
-/* サイト全体のフォントを変更（Google Fonts） */
+/* Google Fonts を適用 */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
+/* サイト全体のデザイン */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    background: linear-gradient(to bottom, #f9f9f9, #e3e3e3);
+    color: #333;
     text-align: center;
-    background: linear-gradient(to bottom, #f9f9f9, #e3e3e3); /* グラデーション */
 }
 
-/* ヘッダー（上のバー） */
+/* ヘッダー（ナビゲーションバー） */
 header {
     background: #0077b6;
     color: white;
@@ -109,10 +46,24 @@ nav ul li a:hover {
 /* メインコンテンツ（見出しデザイン） */
 h2 {
     color: #0077b6;
-    font-size: 2em;
-    border-bottom: 3px solid #0077b6;
+    font-size: 2.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
     display: inline-block;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 3px;
+    background: #ffdd57;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* 記事リストをカード風に */
@@ -140,18 +91,21 @@ h2 {
 /* ボタンのデザイン */
 .button {
     display: inline-block;
-    padding: 10px 20px;
-    background: #0077b6;
+    padding: 12px 20px;
+    background: linear-gradient(45deg, #0077b6, #00b4d8);
     color: white;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    transition: 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
 }
 
 .button:hover {
-    background: #ffdd57;
+    background: linear-gradient(45deg, #ffdd57, #ff8800);
     color: #333;
+    transform: scale(1.1);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* フッター */
@@ -161,29 +115,12 @@ footer {
     padding: 10px;
     margin-top: 20px;
 }
-<a href="index.html" class="button">← ホームへ戻る</a>
-/* ボタンのアニメーション */
-.button {
-    display: inline-block;
-    padding: 12px 20px;
-    background: #0077b6;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: 0.3s ease-in-out;
-}
 
-.button:hover {
-    background: #ffdd57;
-    color: #333;
-    transform: scale(1.1);
-}
 /* スクロールで要素がフェードイン */
 .fade-in {
     opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 .fade-in.active {
