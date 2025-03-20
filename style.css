@@ -162,3 +162,31 @@ footer {
     margin-top: 20px;
 }
 <a href="index.html" class="button">← ホームへ戻る</a>
+/* ボタンのアニメーション */
+.button {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #0077b6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.button:hover {
+    background: #ffdd57;
+    color: #333;
+    transform: scale(1.1);
+}
+/* スクロールで要素がフェードイン */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
